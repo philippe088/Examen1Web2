@@ -18,25 +18,114 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Exercices Web 2
-                <img src="logo.png" alt="" style="width:40px;" class="rounded-pill"> 
+                <img src="logo.png" alt="" style="width:40px;" class="rounded-pill">
             </a>
-          </div>
+        </div>
         <div class="container-fluid">
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Temperature</a>
+                    <a class="nav-link" href="temperature.html">Temperature</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Objet de Navigateur</a>
+                    <a class="nav-link" href="listeEpicerie.html">Objet de Navigateur</a>
                 </li>
             </ul>
         </div>
 
     </nav>
 </header>
+
 <body>
- 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <input class="mb-2" id="champ1" type="text">
+                <select id="selecteur1" class="form-select">
+                    <option value=Celsius>Celsius</option>
+                    <option value=Fahrenheit>Fahrenheit </option>
+                    <option value=Kelvin>Kelvin</option>
+                </select>
+            </div>
+            <div class="col-md-6 text-center">
+                <input class="mb-2" id="champ2" type="text">
+                <select id="selecteur2" class="form-select">
+                    <option value=Celsius>Celsius</option>
+                    <option value=Fahrenheit>Fahrenheit </option>
+                    <option value=Kelvin>Kelvin</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        champ1.addEventListener("input", FaireConvertion);
+        selecteur1.addEventListener("change", FaireConvertion);
+        selecteur2.addEventListener("change", FaireConvertion);
+
+        function FaireConvertion() {
+            const champ1 = document.getElementById("champ1");
+            const champ2 = document.getElementById("champ2");
+            const selecteur1 = document.getElementById("selecteur1");
+            const selecteur2 = document.getElementById("selecteur2");
+            const temperature = parseInt(champ1.value);
+            const valeurSelecteur1 = selecteur1.value;
+            const valeurSelecteur2 = selecteur2.value;
+            let temperatureConvertie;
+
+            switch (valeurSelecteur1) {
+                case "Celsius":
+                    if (valeurSelecteur2 === "Fahrenheit") {
+                        temperatureConvertie = (temperature * 9 / 5) + 32;
+                    }
+                    else if (valeurSelecteur2 === "Kelvin") {
+                        temperatureConvertie = temperature + 273;
+                    }
+                    else {
+                        temperatureConvertie = temperature;
+                    }
+                    break;
+
+                case "Fahrenheit":
+                    if (valeurSelecteur2 === "Celsius") {
+                        temperatureConvertie = (temperature - 32) * 5 / 9
+                    }
+                    else if (valeurSelecteur2 === "Kelvin") {
+                        temperatureConvertie = (temperature - 32) * 5 / 9 + 273;
+                    }
+                    else {
+                        temperatureConvertie = temperature;
+                    }
+                    break;
+
+                case "Kelvin":
+                    if (valeurSelecteur2 === "Celsius") {
+                        temperatureConvertie = temperature - 273;
+                    }
+                    else if (valeurSelecteur2 === "Fahrenheit") {
+                        temperatureConvertie = (temperature - 273.15) * 9 / 5 + 32;
+                    }
+                    else {
+                        temperatureConvertie = temperature;
+                    }
+                    break;
+            }
+            champ2.value = temperatureConvertie.toFixed(0);
+
+        }
+
+       
+
+        FaireConvertion();
+
+
+
+
+
+
+
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
