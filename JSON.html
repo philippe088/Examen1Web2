@@ -50,8 +50,7 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-12">
-                    <select id="selecteurProduit"
-                        class="form-select w3-margin">
+                    <select id="selecteurProduit" class="form-select mt-2">
                         <option>Choisir un produit</option>
                     </select>
 
@@ -64,18 +63,16 @@ function fetchProdJSON() {
     fetch('https://dummyjson.com/products')
     .then((response) => response.json())
     .then((json) => {
-                    const tableau  = Object.values(json);
-        /*for (let i = 0; i< tableau.length -1; i++) {
-            console.log(tableau[i]);
+        const tableauBrute = Object.values(json);
+        const tableauTest=tableauBrute[0];
+        console.log(tableauTest[0].title);
+        
 
-        }*/
-        console.log(tableau.length);
-
-    })
-    .catch((error) => {
-        console.error('Error fetching JSON:', error);
-    });
+       
+      
+     });
 }
+
 
 
 
