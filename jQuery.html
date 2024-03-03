@@ -16,11 +16,7 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
         <style>
-        #display {
-            background-color: rgb(237, 225, 100);
-            padding: 10px;
-            margin-bottom: 10px;
-        }
+        .exerice {}
     </style>
 
     </head>
@@ -84,16 +80,6 @@
                         <img class="img-fluid" src="/images/chat.jpg" id="image"
                             alt="amanita-muscaria">
 
-                        <button id="btn1" type="button"
-                            class="btn btn-primary my-2">Heigth +10 px</button>
-                        <button id="btn2" type="button"
-                            class="btn btn-dark my-2">Heigth -10 px</button>
-                        <button id="btn3" type="button"
-                            class="btn btn-success my-2">Backgroung
-                            vert</button>
-                        <button id="btn4" type="button"
-                            class="btn btn-danger my-2">Backgroud rouge</button>
-
                     </div>
                     <div id="display">
                         tata
@@ -123,9 +109,10 @@
                 console.log(ca);
                 $("#p1 ").html(ca.toUpperCase());
             });
-            $("#button").click(function () {
+            $("button").click(function(){
                 var inputText = $("input").val();
-                var liAjoute = $('<li>').text(inputText);
+                var liAjoute = $('<li>').text(inputText); 
+               
                 $("#liste").append(liAjoute);
             });
             $("#liste").on("click", "li", function () {
