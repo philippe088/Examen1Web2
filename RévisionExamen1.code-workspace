@@ -1,11 +1,8 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"path": "../../Nicolas_Plouffe_William_Crepault_TP1_Web_2/Nicolas_Plouffe_William_Crepault_TP1_Web_2"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {}
 }

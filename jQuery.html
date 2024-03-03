@@ -15,23 +15,32 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <style>
+    .exerice{
+
+    }
+</style>
 
     </head>
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        <nav
+            class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Exercices Web 2
-                    <img src="logo.png" alt style="width:40px;" class="rounded-pill">
+                    <img src="logo.png" alt style="width:40px;"
+                        class="rounded-pill">
                 </a>
             </div>
             <div class="container-fluid">
                 <!-- Links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="temperature.html">Temperature</a>
+                        <a class="nav-link"
+                            href="temperature.html">Temperature</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listeEpicerie2.html">Liste Épicerie</a>
+                        <a class="nav-link" href="listeEpicerie2.html">Liste
+                            Épicerie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="JSON.html">JSON</a>
@@ -43,14 +52,98 @@
             </div>
         </nav>
     </header>
-        
-        <body>
 
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        </body>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="h2">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Molestiae id at delectus explicabo, non tempora, eius,
+                        qui saepe aperiam repellat sit provident incidunt? Quod,
+                        incidunt. Blanditiis repellendus sed placeat iste.</h1>
 
-    </html>
+                    <p id="p1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, amet. Ex deserunt perferendis itaque delectus
+                        numquam. Quod veniam, eaque corrupti nam minus, vero,
+                        impedit ullam libero qui dolores laboriosam atque!
+                    </p>
+                    <ul id="ul1">
+                        <li id="ulLi1">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Amet, facere? Perspiciatis quaerat adipisci,
+                            aliquid alias praesentium sunt dolorum omnis dolor
+                            vitae earum quasi nemo nulla totam consectetur
+                            itaque. Repellat, molestiae?</li>
+                        <li id="ulLi2">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Error, facere nisi. Nihil officia iure eius
+                            commodi nisi neque doloremque saepe nulla soluta
+                            necessitatibus natus corporis labore placeat
+                            dignissimos, quo id.</li>
+                        <li id="ulLi3">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Tenetur nam sunt atque in minus sed rerum
+                            repellendus iusto officiis dolorem fugiat qui ex,
+                            magni expedita sequi fugit consectetur inventore
+                            delectus!</li>
+                    </ul>
+
+                    <div>
+                        <ul id="ul2">
+                            <li id="ul2Li1"><a href>Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Impedit alias possimus
+                                    neque illo distinctio, fuga modi ea
+                                    molestias adipisci ad a nam officia harum
+                                    incidunt fugit voluptatem iure dolorem
+                                    nesciunt.</a></li>
+                            <li id="ul2Li2"><a href>Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Suscipit perspiciatis
+                                    repellat commodi voluptatem cumque
+                                    necessitatibus nesciunt dicta nemo nobis
+                                    tenetur error soluta, iure unde ex quibusdam
+                                    velit doloribus mollitia eius.</a></li>
+                        </ul>
+                        <img
+                            src="C:\Users\Nicolas\Documents\MEGA_DRIVE_MES_DOCUMENTS\Scolaire\Session2\Web2\RévisionExamen1\Examen1Web2\image\amanita-muscaria.webp"
+                            id="image" alt="amanita-muscaria">
+
+                        <input id="input" type="text" class="form-control mt-2">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script>
+    $(document).ready(function(){
+        $("input").mouseenter(function() {
+            $(this).css('background-color','#FC0');
+        });
+        $("input").mouseleave (function(){
+ $(this).css('background-color','#F3F');
+ });
+        $("input").on("input",function(){
+            $(this).css('background-color','#FFF');
+var ca=$(this).val();
+console.log(ca);
+$("#p1 ").html(ca.toUpperCase());
+
+
+});
+
+    });
+</script>
+    </body>
+
+</html>
