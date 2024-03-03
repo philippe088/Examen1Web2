@@ -16,12 +16,6 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
 
-        <style>
-        .liste {
-            color: rgb(0, 0, 0);
-        }
-    </style>
-
     </head>
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
@@ -49,68 +43,8 @@
             </div>
         </nav>
     </header>
-
-    <body>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col.12 text-center">
-                    <input id="champInput" class="form" type="text">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 text-center">
-                    <button type="button" id="btnAjouter"
-                        class="btn btn-primary mt-2">Ajouter</button>
-                </div>
-                <div class="col-xs-6 text-center">
-                    <button type="button" id="btnEffacer"
-                        class="btn btn-primary mt-2">Supprimer</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 text-center ">
-                    <ul id="listeAffichage">
-
-                    </ul>
-                </div>
-            </div>
-            <script>
-
-
-            const ajouterBtn = document.getElementById("btnAjouter");
-            const effacerBtn = document.getElementById("btnEffacer");
-            const champInput = document.getElementById("champInput");
-            const listeAffichage = document.getElementById("listeAffichage");
-
-            ajouterBtn.addEventListener("click", ajouterElement);
-            effacerBtn.addEventListener("click", SupprimerElement);
-
-
-
-            function ajouterElement() {
-
-                const liAjoute = document.createElement("li");
-                liAjoute.textContent = champInput.value;
-                liAjoute.classList.add("liste");
-                listeAffichage.appendChild(liAjoute);
-                champInput.value = "";
-
-
-            }
-
-            function SupprimerElement() {
-                
-                const listeExistante = document.getElementById("listeAffichage");
-                const dernierEnfant = listeExistante.lastChild;
-                listeAffichage.removeChild(dernierEnfant);
-              
-
-
-            }
-
-
-        </script>
+        
+        <body>
 
             <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
