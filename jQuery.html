@@ -13,7 +13,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .exerice {}
+        
     </style>
 
 </head>
@@ -107,7 +107,7 @@
 
                         <img class="img-fluid" src="/images/chat.jpg" id="image" alt="amanita-muscaria">
 
-                        
+
 
                     </div>
 
@@ -133,21 +133,21 @@
                 console.log(ca);
                 $("#p1 ").html(ca.toUpperCase());
             });
-            $("button").click(function(){
+            $("button").click(function () {
                 var inputText = $("input").val();
-                var liAjoute = $('<li>').text(inputText); 
-               
+                var liAjoute = $('<li>').text(inputText);
+
                 $("#liste").append(liAjoute);
 
-            })    
-            $("#liste").on("click", "li", function() {
-                 $(this).remove();
+            })
+            $("#liste").on("click", "li", function () {
+                $(this).remove();
             })
 
         });
-       
 
-       
+
+
     </script>
 </body>
 
