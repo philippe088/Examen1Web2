@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <title>Exercises Examen 1</title>
+<head>
+    <title>Exercises Examen 1</title>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Exercises">
-        <meta name="description" content="Exercise Revision Examen 1">
-        <meta name="author" content="Philippe et Tarik">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-        <style>
-    .exerice{
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Exercises">
+    <meta name="description" content="Exercise Revision Examen 1">
+    <meta name="author" content="Philippe et Tarik">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .exerice {}
+    </style>
 
-    }
-</style>
-
-    </head>
-    <header>
-        <nav
-            class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Exercices Web 2
-                    <img src="logo.png" alt style="width:40px;"
-                        class="rounded-pill">
-                </a>
-            </div>
-            <div class="container-fluid">
-                <!-- Links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="temperature.html">Temperature</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="listeEpicerie2.html">Liste
-                            Épicerie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="JSON.html">JSON</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="jQuery.html">JQuery</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <body>
+</head>
+<header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2 id="h2">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                        Molestiae id at delectus explicabo, non tempora, eius,
-                        qui saepe aperiam repellat sit provident incidunt? Quod,
-                        incidunt. Blanditiis repellendus sed placeat iste.</h1>
+            <a class="navbar-brand" href="index.html">Exercices Web 2
+                <img src="logo.png" alt style="width:40px;" class="rounded-pill">
+            </a>
+        </div>
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="temperature.html">Temperature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listeEpicerie2.html">Liste
+                        Épicerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JSON.html">JSON</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jQuery.html">JQuery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="h2">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Molestiae id at delectus explicabo, non tempora, eius,
+                    qui saepe aperiam repellat sit provident incidunt? Quod,
+                    incidunt. Blanditiis repellendus sed placeat iste.</h1>
 
                     <p id="p1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,43 +99,56 @@
                                     tenetur error soluta, iure unde ex quibusdam
                                     velit doloribus mollitia eius.</a></li>
                         </ul>
-                        <img
-                            src="C:\Users\Nicolas\Documents\MEGA_DRIVE_MES_DOCUMENTS\Scolaire\Session2\Web2\RévisionExamen1\Examen1Web2\image\amanita-muscaria.webp"
-                            id="image" alt="amanita-muscaria">
+                        <input id="input" type="text" class="form-control my-2">
+                        <button type="button" class="btn btn-success my-2">Ajouter</button>
+                        <ul id="liste">
 
-                        <input id="input" type="text" class="form-control mt-2">
+                        </ul>
+
+                        <img class="img-fluid" src="/images/chat.jpg" id="image" alt="amanita-muscaria">
+
+                        
 
                     </div>
 
-                </div>
             </div>
         </div>
+    </div>
 
-        <script
-            src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script>
-    $(document).ready(function(){
-        $("input").mouseenter(function() {
-            $(this).css('background-color','#FC0');
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("input").mouseenter(function () {
+                $(this).css('background-color', '#FC0');
+            });
+            $("input").mouseleave(function () {
+                $(this).css('background-color', '#F3F');
+            });
+            $("input").on("input", function () {
+                $(this).css('background-color', '#FFF');
+                var ca = $(this).val();
+                console.log(ca);
+                $("#p1 ").html(ca.toUpperCase());
+            });
+            $("button").click(function(){
+                var inputText = $("input").val();
+                var liAjoute = $('<li>').text(inputText); 
+               
+                $("#liste").append(liAjoute);
+
+            })    
+            $("#liste").on("click", "li", function() {
+                 $(this).remove();
+            })
+
         });
-        $("input").mouseleave (function(){
- $(this).css('background-color','#F3F');
- });
-        $("input").on("input",function(){
-            $(this).css('background-color','#FFF');
-var ca=$(this).val();
-console.log(ca);
-$("#p1 ").html(ca.toUpperCase());
+       
 
-
-});
-
-    });
-</script>
-    </body>
+       
+    </script>
+</body>
 
 </html>
